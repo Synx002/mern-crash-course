@@ -13,21 +13,7 @@ export default defineConfig({
     }
   },
   build: {
-    // Change output directory for Vercel
-    outDir: 'public',
-    
-    // Increase chunk size warning limit (optional)
-    chunkSizeWarningLimit: 1000,
-    
-    // Configure manual chunks for better code splitting
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          // Group major dependencies together
-          vendor: ['react', 'react-dom', 'zustand'],
-          // Add more chunks as needed
-        }
-      }
-    }
+    outDir: 'public', // This should change the output directory
+    chunkSizeWarningLimit: 1000
   }
 })
