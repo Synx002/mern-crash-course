@@ -1,4 +1,3 @@
-import { DeleteIcon, EditIcon } from "@chakra-ui/icons";
 import {
 	Box,
 	Button,
@@ -106,7 +105,6 @@ const ProductCard = ({ product }) => {
 
 				<HStack direction='row' spacing={2} justifyContent={"flex-end"}>
 				<Button 
-					leftIcon={<EditIcon />} 
 					onClick={onOpen} 
 					colorScheme='blue' 
 					variant='outline'
@@ -114,7 +112,6 @@ const ProductCard = ({ product }) => {
 					Edit
 				</Button>
 				<Button 
-					rightIcon={<DeleteIcon />} 
 					colorScheme='red' 
 					variant='solid'
 					onClick={() => handleDeleteProduct(product._id)}
